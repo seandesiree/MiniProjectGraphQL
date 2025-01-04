@@ -13,7 +13,9 @@ const Posts: React.FC = () => {
     return (
         <div className="posts-section">
             <h2>User Posts</h2>
-            <PostForm />
+            <PostForm onClose={function (): void {
+                throw new Error('Function not implemented.');
+            } } />
             <ul>
                 {data.posts.map(post => (
                     <li key={post.id}>
